@@ -2,7 +2,6 @@ package user
 
 import (
 	"net/http"
-	"time"
 )
 
 type LoginResponse struct {
@@ -10,13 +9,10 @@ type LoginResponse struct {
 }
 
 type RespondUser struct {
-	UserID    uint      `json:"userId"`
-	Username  string    `json:"username"`
-	Name      string    `json:"name"`
-	Email     string    `json:"email"`
-	Phone     string    `json:"phone"`
-	BirthDate time.Time `json:"birthDate"`
-	Gender    string    `json:"jenisKelamin"`
+	UserID uint   `json:"userId"`
+	Name   string `json:"name"`
+	Email  string `json:"email"`
+	Phone  string `json:"phone"`
 }
 
 func SuccessInsert(data interface{}) map[string]interface{} {
