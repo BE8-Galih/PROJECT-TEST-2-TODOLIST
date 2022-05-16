@@ -21,7 +21,7 @@ type RespondTodoProject struct {
 func SuccessInsert(data interface{}) map[string]interface{} {
 	return map[string]interface{}{
 		"code":    http.StatusCreated,
-		"message": "Success Add Todo",
+		"message": "Success Add Project",
 		"status":  true,
 		"data":    data,
 	}
@@ -65,7 +65,7 @@ func StatusGetIdOk(data interface{}) map[string]interface{} {
 func StatusCompleted(data interface{}) map[string]interface{} {
 	return map[string]interface{}{
 		"code":    http.StatusOK,
-		"message": "Success Completed Todo",
+		"message": "Success Completed Project",
 		"status":  true,
 		"data":    data,
 	}
@@ -74,7 +74,7 @@ func StatusCompleted(data interface{}) map[string]interface{} {
 func StatusReopen(data interface{}) map[string]interface{} {
 	return map[string]interface{}{
 		"code":    http.StatusOK,
-		"message": "Success Reopen Todo",
+		"message": "Success Reopen Project",
 		"status":  true,
 		"data":    data,
 	}
@@ -101,7 +101,7 @@ func StatusGetAllUnComplete(data interface{}) map[string]interface{} {
 func StatusMove() map[string]interface{} {
 	return map[string]interface{}{
 		"code":    http.StatusOK,
-		"message": "Success Move Todo",
+		"message": "Success Move Project",
 		"status":  true,
 	}
 }
